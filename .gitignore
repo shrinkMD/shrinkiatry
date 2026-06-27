@@ -1,0 +1,8 @@
+# Local source materials, not part of the deployed site
+_source-materials/
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+src/__pycache__/
