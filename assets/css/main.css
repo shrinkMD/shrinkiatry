@@ -768,3 +768,32 @@ a.card:hover .card__more { color: var(--amber-text); }
 @keyframes hb-twinkle { 0%, 100% { opacity: 0; transform: scale(.6); } 50% { opacity: .9; transform: scale(1); } }
 @keyframes hb-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-11px); } }
 @keyframes hb-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
+
+/* ============================================================
+   v6: pillar components (why-trust, review panel, related pills)
+   ============================================================ */
+.why-trust {
+  background: var(--surface-2); border: 1px solid var(--line); border-left: 4px solid var(--good);
+  border-radius: 0 14px 14px 0; padding: 1.15rem 1.4rem; font-family: var(--font-sans);
+}
+.why-trust .eyebrow { display: block; margin-bottom: .6rem; }
+.why-trust__list { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+.why-trust__list li { position: relative; padding-left: 1.6rem; font-size: .95rem; color: var(--ink-2); line-height: 1.45; }
+.why-trust__list li::before { content: "\2713"; position: absolute; left: 0; top: 0; color: var(--good); font-weight: 800; }
+.why-trust a { font-weight: 600; }
+
+.review-panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem 1.45rem; font-family: var(--font-sans); }
+.review-panel .eyebrow { display: block; margin-bottom: .85rem; }
+.review-panel__grid { margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem 1.8rem; }
+@media (max-width: 560px) { .review-panel__grid { grid-template-columns: 1fr; } }
+.review-panel__grid dt { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.review-panel__grid dd { margin: .15rem 0 0; font-size: .96rem; color: var(--ink); }
+
+.related-cluster h2 { margin-bottom: .9rem; }
+.relpills { display: flex; flex-wrap: wrap; gap: .55rem; }
+.relpill {
+  font-family: var(--font-sans); font-weight: 600; font-size: .9rem; text-decoration: none;
+  color: var(--blue); background: var(--blue-tint); border: 1px solid color-mix(in srgb, var(--blue) 24%, transparent);
+  padding: .42rem .85rem; border-radius: 999px; transition: background .15s, color .15s;
+}
+.relpill:hover { background: var(--blue); color: #fff; }
