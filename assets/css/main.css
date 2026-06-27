@@ -797,3 +797,39 @@ a.card:hover .card__more { color: var(--amber-text); }
   padding: .42rem .85rem; border-radius: 999px; transition: background .15s, color .15s;
 }
 .relpill:hover { background: var(--blue); color: #fff; }
+
+/* ============================================================
+   v7: banded pillar hub layout + sticky on-page nav
+   ============================================================ */
+.pillar { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+@media (max-width: 920px) { .pillar { grid-template-columns: 1fr; } }
+.pillar__main { min-width: 0; max-width: 760px; }
+.pillar__main > * + * { margin-top: 1.3rem; }
+.pillar__main h2 {
+  font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.18;
+  margin-top: 2.6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); scroll-margin-top: 90px;
+}
+.pillar__main h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 1.2rem; }
+.pillar__main h2::before { content: ""; display: block; width: 2rem; height: 3px; background: var(--amber); border-radius: 2px; margin-bottom: .75rem; }
+.pillar__main h3 { margin-top: 1.5rem; }
+.pillar__main p { color: var(--ink-2); }
+.pillar__main ul, .pillar__main ol { padding-left: 1.3rem; }
+.pillar__main li { margin-top: .5rem; color: var(--ink-2); }
+.pillar__aside { position: sticky; top: 86px; display: grid; gap: 1.1rem; }
+@media (max-width: 920px) { .pillar__aside { position: static; } }
+.pillar__aside .toc { background: var(--surface); }
+
+.pillar-hero { position: relative; overflow: hidden; }
+.pillar-hero .article__meta { color: #c9cdd4; }
+.pillar-hero .article__meta span { color: #c9cdd4; }
+.pillar-byline { font-family: var(--font-sans); font-size: .9rem; color: #c9cdd4; margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .4rem 1rem; }
+
+.bandhead { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.1rem); }
+.pillar-two { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+@media (max-width: 760px) { .pillar-two { grid-template-columns: 1fr; } }
+
+/* break up long article bodies too (articles are single-column by design) */
+.article__body h2 { border-top: 1px solid var(--line); padding-top: 1.5rem; margin-top: 2.6rem; }
+.article__body > h2:first-of-type, .article__body .keytakeaways + h2 { border-top: 0; }
+.article__body h2::before { content: ""; display: block; width: 2rem; height: 3px; background: var(--amber); border-radius: 2px; margin-bottom: .7rem; }
+.article__body h2#faq::before, .article__body #sources-h::before { display: none; }
