@@ -332,7 +332,7 @@ def render_head(page):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css?v=3">
 <script type="application/ld+json">{ld_json}</script>
 </head>
 <body>
@@ -408,7 +408,7 @@ def render_footer():
 <p><a href="mailto:{SITE['email']}">{SITE['email']}</a> &middot; &copy; {SITE['year']} {SITE['publisher']} &middot; shrinkiatry is written or reviewed by {SITE['reviewer']}, a board-certified psychiatrist.</p>
 </div></div>
 </footer>
-<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>"""
 
