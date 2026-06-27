@@ -549,3 +549,129 @@ tbody tr:last-child td { border-bottom: 0; }
 a.card:hover h3, .card--link:hover h3 { color: var(--blue); }
 .stats-strip .stat { border-left-color: var(--amber); }
 .section--slate .stats-strip .stat__num { color: #fff; }
+
+/* ============================================================
+   v4: brand pop, editorial kickers, beautiful cards, OR control room
+   ============================================================ */
+:root { --amber-text: #8a5d12; --ink-tile: #2a2d37; }
+[data-theme="dark"] { --amber-text: #e7a93f; --ink-tile: #232732; }
+
+/* ---- Brand wordmark ---- */
+.brand .dot { color: #c8861f; }
+[data-theme="dark"] .brand .dot { color: var(--amber); }
+.brand__sub { color: var(--amber-text); font-weight: 700; }
+.footer-brand .brand .dot { color: var(--amber); }
+
+/* ---- Editorial kicker eyebrows (amber rule) ---- */
+.eyebrow { display: inline-flex; align-items: center; }
+.eyebrow::before {
+  content: ""; display: inline-block; width: 1.7rem; height: 3px;
+  background: var(--amber); border-radius: 2px; margin-right: .65rem; transform: none;
+}
+.eyebrow.no-tick::before { display: none; }
+.breadcrumb .eyebrow::before { display: none; }
+.center .eyebrow { display: inline-block; }
+.center .eyebrow::before { display: none; }
+.center .eyebrow::after {
+  content: ""; display: block; width: 2.6rem; height: 3px; border-radius: 2px;
+  background: var(--amber); margin: .6rem auto 0;
+}
+
+/* ---- Beautiful cards (global) ---- */
+.card {
+  border-radius: 16px; padding: 1.55rem 1.5rem; position: relative; overflow: hidden;
+  background: var(--surface);
+}
+.card::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background: linear-gradient(90deg, var(--amber), var(--blue-soft));
+  opacity: .55; transition: opacity .25s, height .25s;
+}
+a.card:hover::before, .card--link:hover::before { opacity: 1; height: 4px; }
+a.card:hover, .card--link:hover {
+  transform: translateY(-5px); box-shadow: 0 18px 42px rgba(28, 30, 36, .14); border-color: var(--line-2);
+}
+[data-theme="dark"] a.card:hover, [data-theme="dark"] .card--link:hover { box-shadow: 0 18px 42px rgba(0, 0, 0, .5); }
+.card .tag { border-radius: 7px; }
+.card__more { transition: gap .2s; letter-spacing: .01em; }
+a.card:hover .card__more { color: var(--amber-text); }
+[data-theme="dark"] a.card:hover .card__more { color: var(--amber); }
+
+/* tag pills a touch more refined */
+.tag { border-radius: 7px; padding: .28rem .6rem; }
+.tag--blue { background: var(--blue-tint); }
+
+/* ---- what-part qcards: extra polish ---- */
+.qcard { border-radius: 14px; border-left-width: 5px; }
+.qcard::after {
+  content: ""; position: absolute; right: 1.2rem; bottom: 1.2rem; width: 8px; height: 8px;
+  border-radius: 50%; background: var(--amber); opacity: 0; transition: opacity .2s, transform .2s;
+}
+.qcard:hover::after { opacity: .9; transform: scale(1.4); }
+.qcard:hover .go { gap: .5rem; }
+.qcard:hover .go .ar { display: inline-block; transform: translateX(3px); transition: transform .2s; }
+
+/* ---- network-continue: more design ---- */
+.network-continue { border-left: 4px solid var(--amber); border-radius: 0 16px 16px 0; }
+.network-continue li a { padding-inline: .6rem; border-radius: 8px; transition: background .15s; }
+.network-continue li a:hover { background: var(--surface-2); }
+.network-continue .nc-site { transition: color .15s; }
+
+/* ---- Footer pizazz ---- */
+.footer-main { position: relative; }
+.footer-main::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--amber), var(--blue-soft), var(--amber));
+}
+.footer-col a:hover { color: var(--amber); }
+.network-bar a:hover { color: var(--amber); }
+
+/* ---- Slate hero bands: subtle depth so hub pages aren't flat ---- */
+.section--slate { position: relative; overflow: hidden; }
+.section--slate > .wrap { position: relative; z-index: 1; }
+.section--slate::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(38% 70% at 96% 0%, rgba(231, 169, 63, .12), transparent 60%),
+    radial-gradient(46% 80% at 2% 100%, rgba(134, 179, 209, .14), transparent 62%);
+}
+.hero::after { z-index: 0; }
+
+/* ============================================================
+   Operating Room: control-room treatment
+   ============================================================ */
+.or-controls { gap: .55rem; padding: .2rem 0 .3rem; }
+.or-filter {
+  border-radius: 999px; border-width: 1.5px; font-weight: 650;
+  transition: background .15s, color .15s, border-color .15s, transform .12s;
+}
+.or-filter:hover { border-color: var(--amber); color: var(--amber-text); }
+[data-theme="dark"] .or-filter:hover { color: var(--amber); }
+.or-filter[aria-pressed="true"] {
+  background: var(--amber); color: #20160a; border-color: var(--amber);
+}
+.or-filter[aria-pressed="true"]:hover { color: #20160a; }
+
+.or-grid {
+  background: linear-gradient(180deg, #23252e 0%, #1b1d25 100%);
+  border: 1px solid rgba(255, 255, 255, .07); border-radius: 20px;
+  padding: clamp(1rem, 2.5vw, 1.6rem); margin-top: 1.4rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05), 0 20px 50px rgba(12, 14, 20, .18);
+}
+.or-card {
+  background: var(--ink-tile); border: 1px solid rgba(255, 255, 255, .08); color: #eef1f4;
+  border-radius: 14px; overflow: hidden;
+}
+.or-card::after {
+  content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 3px;
+  background: linear-gradient(180deg, var(--amber), var(--blue-soft));
+  opacity: 0; transition: opacity .2s;
+}
+.or-card:hover::after { opacity: 1; }
+.or-card:hover { transform: translateY(-5px); border-color: rgba(134, 179, 209, .55); box-shadow: 0 18px 36px rgba(0, 0, 0, .5); }
+.or-card__num { color: var(--amber); font-weight: 800; font-size: .82rem; letter-spacing: .14em; }
+.or-card h3 { color: #fff; font-size: 1.32rem; }
+.or-card p { color: #b8c1cb; }
+.or-card__stage { color: var(--blue-soft); font-weight: 600; }
+
+/* article cards / hub grids inherit the global .card upgrades automatically */
