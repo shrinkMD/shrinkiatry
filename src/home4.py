@@ -3,7 +3,7 @@
 import engine as S
 
 HERO_IMG = ("https://d8j0ntlcm91z4.cloudfront.net/user_3EbtPZagpCp9mIUJbMMZKZ0oURN/"
-            "hf_20260627_062707_1d25b9c8-c443-4a21-820d-44229931113b.png")
+            "hf_20260627_063737_4d943c4d-b20e-4250-b102-ea529a1eaf91.png")
 
 SPARK = ('<svg class="hero__spark" viewBox="0 0 100 100" aria-hidden="true">'
          '<defs><linearGradient id="skSpark" x1="0" y1="0" x2="1" y2="1">'
@@ -122,8 +122,6 @@ __SPARK__
 <img src="__HERO__" width="800" height="600" alt="A psychiatrist's desk during a telepsychiatry session: an open laptop showing a softly blurred video call, a notebook and fountain pen, and a coffee mug in soft window light." loading="eager" onerror="this.style.display='none'">
 </figure>
 __MEDALLION__
-<div class="hero__stat hero__stat--a"><strong>48</strong><span>months of residency</span></div>
-<div class="hero__stat hero__stat--b"><strong>10</strong><span>rooms in the OR</span></div>
 </div>
 </div></div>
 <a class="hero__scroll" href="#why-exists" aria-label="Scroll to content"><span>Scroll</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
