@@ -3,7 +3,7 @@
 import engine as S
 
 HERO_IMG = ("https://d8j0ntlcm91z4.cloudfront.net/user_3EbtPZagpCp9mIUJbMMZKZ0oURN/"
-            "hf_20260627_041526_5f26dd36-c2bb-4092-b1a1-7d47da05d492.png")
+            "hf_20260627_062707_1d25b9c8-c443-4a21-820d-44229931113b.png")
 
 SPARK = ('<svg class="hero__spark" viewBox="0 0 100 100" aria-hidden="true">'
          '<defs><linearGradient id="skSpark" x1="0" y1="0" x2="1" y2="1">'
