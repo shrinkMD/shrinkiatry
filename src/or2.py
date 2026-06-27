@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""The Psychiatry Operating Room — interactive flagship hub."""
+"""The Psychiatry Operating Room (clean module, internal note removed)."""
 import engine as S
 
 ROOMS = [
@@ -73,7 +73,7 @@ _itemlist = {
     ],
 }
 
-BODY = f"""
+BODY = """
 <section class="section section--slate section--tight"><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb" style="color:#aeb6bd"><a href="/" style="color:#cdd6dd">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">The Psychiatry Operating Room</span></nav>
 <span class="eyebrow">The flagship</span>
@@ -87,15 +87,19 @@ BODY = f"""
 <p>Use the filters to narrow by theme, or walk the whole floor one room at a time.</p>
 </div>
 
-<div class="or-controls" role="group" aria-label="Filter rooms by theme">{_filters()}</div>
+<div class="or-controls" role="group" aria-label="Filter rooms by theme">__FILTERS__</div>
 <p id="or-status" class="sr-only" aria-live="polite">All ten rooms shown.</p>
-<div class="or-grid">{_cards()}</div>
+<div class="or-grid">__CARDS__</div>
 </div></section>
 
 <section class="section section--tint"><div class="wrap"><div class="maxread">
-{S.network_continue(["shrinkopedia","psychiatryrx","shrinkmd","shariqrefai","shrinknetwork"])}
+__NETCONT__
 </div></div></section>
 """
+
+BODY = (BODY.replace("__FILTERS__", _filters())
+            .replace("__CARDS__", _cards())
+            .replace("__NETCONT__", S.network_continue(["shrinkopedia", "psychiatryrx", "shrinkmd", "shariqrefai", "shrinknetwork"])))
 
 PAGES = [{
     "slug": "psychiatry-operating-room",
