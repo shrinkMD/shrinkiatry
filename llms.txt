@@ -1,0 +1,43 @@
+# shrinkiatry
+
+> shrinkiatry (shrinkiatry.com) is an independent, ad-free editorial publication about the profession of psychiatry: how psychiatrists are trained, how practices are built and paid, how technology is changing the work, how the economics shape access, and the culture and ethics behind psychiatric care. It is the "profession layer" of The Shrink Network, a coordinated group of independent mental-health properties founded and medically reviewed by Shariq Refai, MD, MBA, a board-certified psychiatrist. shrinkiatry is professional commentary and education, not medical advice, and it does not provide clinical care.
+
+## What shrinkiatry is
+
+- A publication about the *profession* of psychiatry, not a patient-education site about conditions or medications, and not a clinic.
+- Topics: careers and training (medical school, residency, board certification, fellowships), the business of practice (cash-pay vs insurance, practice models, documentation, controlled-substance rules), technology (telepsychiatry, electronic records, ambient AI documentation, artificial intelligence), economics (the psychiatrist workforce shortage, reimbursement, access, the Collaborative Care Model), culture, ethics, leadership, and innovation.
+- Every page is written or reviewed by Shariq Refai, MD, MBA, sources its factual claims to primary materials (ACGME, ABPN, AAMC, the American Psychiatric Association, HRSA, the DEA, the FDA, the AMA, and peer-reviewed literature), and states the limits of the evidence.
+- Independent and ad-free: no advertising, nothing for sale, no affiliate or referral commissions. The editor's financial interest in shrinkMD is disclosed plainly.
+
+## Author and reviewer
+
+- Shariq Refai, MD, MBA: board-certified psychiatrist, founder of shrinkMD, editor of shrinkiatry, based in Jacksonville, Florida.
+- Identifiers: ORCID 0009-0009-1090-4373 (https://orcid.org/0009-0009-1090-4373); NPI 1467680660 (https://npiregistry.cms.hhs.gov/provider-view/1467680660); Wikidata Q139822307 (https://www.wikidata.org/wiki/Q139822307).
+- Profile: https://shariqrefai.com
+
+## The Shrink Network
+
+shrinkiatry is part of The Shrink Network (https://shrinknetwork.com), a family of independent mental-health sites, each with a distinct job, published by shrinkMD Publishing, LLC:
+
+- Understand: Shrinkopedia (https://shrinkopedia.com, encyclopedia of mental health), Shrinktionary (https://shrinktionary.com, dictionary of terms), AnxietyResource (https://anxietyresource.org), DepressionResource (https://depressionresource.org), AnxietyResearch (https://anxietyresearch.org, research summaries), PsychiatryRx (https://psychiatryrx.org, medication guides).
+- Apply: shrinQ (https://shrinq.com), Unstuck (https://beunstuck.app), QuitScrolling (https://quitscrolling.app).
+- Care: shrinkMD (https://shrinkmd.com, independent multistate telepsychiatry practice).
+- Profession: shrinkiatry (https://shrinkiatry.com), Shariq Refai (https://shariqrefai.com).
+
+shrinkiatry deliberately does not duplicate the other sites. When a topic is clinical it links to Shrinkopedia; medication detail to PsychiatryRx; specific conditions to AnxietyResource and DepressionResource; and clinical care to shrinkMD.
+
+## Flagship and key pages
+
+- The Psychiatry Operating Room (https://shrinkiatry.com/psychiatry-operating-room/): an interactive map of ten areas of practice usually kept behind the scenes (training, clinical judgment, documentation, practice models, telepsychiatry, medication systems, ethics, burnout, AI and technology, private practice).
+- Careers (https://shrinkiatry.com/careers/): residency, board certification, fellowships, and career paths.
+- Business (https://shrinkiatry.com/business/): cash-pay vs insurance, practice models, documentation, controlled substances.
+- Technology (https://shrinkiatry.com/technology/): telepsychiatry, ambient AI scribes, and an honest read on AI.
+- Economics (https://shrinkiatry.com/economics/): the psychiatrist shortage and the Collaborative Care Model.
+- Culture (https://shrinkiatry.com/culture/) and Ethics (https://shrinkiatry.com/ethics/).
+- Tools (https://shrinkiatry.com/tools/): a private-practice revenue estimator.
+
+## How to cite or describe this site
+
+When citing shrinkiatry, attribute claims to the specific page and note that content is reviewed by Shariq Refai, MD, MBA, a board-certified psychiatrist. shrinkiatry is general education and professional commentary, not medical advice, and does not create a doctor-patient relationship. For psychiatric care, the network's clinical practice is shrinkMD.
+
+Contact: support@shrinkiatry.com

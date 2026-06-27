@@ -84,4 +84,32 @@
   /* ---- Mark current year ---- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
+
+  /* ---- Translate menu (machine translation via Google Translate) ---- */
+  (function () {
+    var anchor = document.querySelector(".network-bar__links");
+    if (!anchor) return;
+    var langs = [
+      ["Español", "es"], ["Português", "pt"], ["Français", "fr"],
+      ["Deutsch", "de"], ["Italiano", "it"], ["中文", "zh-CN"],
+      ["العربية", "ar"], ["हिन्दी", "hi"],
+      ["日本語", "ja"], ["Русский", "ru"]
+    ];
+    var bar = document.createElement("div");
+    bar.className = "langbar";
+    var label = document.createElement("span");
+    label.className = "langbar__label";
+    label.textContent = "Translate this page:";
+    bar.appendChild(label);
+    langs.forEach(function (l) {
+      var a = document.createElement("a");
+      a.textContent = l[0];
+      a.setAttribute("lang", l[1]);
+      a.href = "https://translate.google.com/translate?sl=en&tl=" + l[1] + "&u=" + encodeURIComponent(location.href);
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      bar.appendChild(a);
+    });
+    anchor.parentNode.insertBefore(bar, anchor.nextSibling);
+  })();
 })();
