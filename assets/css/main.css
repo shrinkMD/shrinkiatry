@@ -833,3 +833,14 @@ a.card:hover .card__more { color: var(--amber-text); }
 .article__body > h2:first-of-type, .article__body .keytakeaways + h2 { border-top: 0; }
 .article__body h2::before { content: ""; display: block; width: 2rem; height: 3px; background: var(--amber); border-radius: 2px; margin-bottom: .7rem; }
 .article__body h2#faq::before, .article__body #sources-h::before { display: none; }
+
+/* Shrink Network mentions as links */
+a.brand__sub { text-decoration: none; }
+a.brand__sub:hover { text-decoration: underline; }
+a.brandline { text-decoration: none; color: #fff; }
+a.brandline:hover { text-decoration: underline; }
+.hero .eyebrow a, .eyebrow a { color: inherit; text-decoration: none; }
+.hero .eyebrow a:hover, .eyebrow a:hover { text-decoration: underline; }
+.idents { font-family: var(--font-sans); font-size: .9rem; color: var(--ink-3); }
+.idents a { color: var(--blue); }
+.brandwrap { display: inline-flex; flex-direction: column; line-height: 1.15; }
