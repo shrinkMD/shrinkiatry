@@ -59,6 +59,18 @@ DESCS = {
  "technology/what-telepsychiatry-changes": "What telepsychiatry changes and what it doesn't: access and overhead shifted, while the exam, the rules, and clinical judgment mostly stayed.",
  "tools": "Educational tools for understanding the profession of psychiatry, starting with a private-practice revenue estimator. More in development.",
  "tools/private-practice-revenue-estimator": "A free, educational calculator estimating net and gross annual revenue for an independent psychiatry practice from volume, pricing, and overhead.",
+ "decoder/why-appointments-feel-short": "Why psychiatric appointments feel short: medication-management visits, billing codes, documentation, and the workforce shortage all compress the time.",
+ "decoder/why-your-psychiatrist-takes-notes": "Why your psychiatrist takes notes: the note is a legal record, a billing document, and the thread that carries your plan between visits.",
+ "decoder/why-medication-changes-are-gradual": "Why psychiatric medication changes are gradual: many drugs take weeks to work, side effects peak early, and slow changes keep the signal clean.",
+ "decoder/why-psychiatrists-ask-certain-questions": "Why psychiatrists ask about sleep, appetite, and family history: the questions map directly to how a diagnosis is built and to safety.",
+ "decoder/why-a-diagnosis-can-change": "Why a psychiatric diagnosis can change: the first one is a working hypothesis, and updating it as the picture clarifies is careful medicine.",
+ "decoder/why-getting-an-appointment-is-hard": "Why getting a psychiatry appointment is hard: a real workforce shortage, thin insurance networks, and uneven geography, all at once.",
+ "decoder/why-some-psychiatrists-dont-take-insurance": "Why some psychiatrists don't take insurance: low reimbursement, heavy administration, and hard-to-join networks push many to cash-pay.",
+ "decoder/why-controlled-substances-have-extra-rules": "Why controlled substances carry extra rules: stimulants and benzodiazepines are federally scheduled, which drives refills, visits, and telehealth limits.",
+ "state-of-psychiatry/psychiatrist-shortage": "The state of the psychiatrist shortage: how deep the workforce gap runs, where it concentrates, and what the projections actually show.",
+ "state-of-psychiatry/telepsychiatry": "The state of telepsychiatry: psychiatry kept virtual care more than any specialty, reshaping access and overhead. The numbers and the limits.",
+ "state-of-psychiatry/burnout": "The state of burnout in psychiatry: what national surveys show, where the specialty ranks, and why the drivers are mostly systemic.",
+ "state-of-psychiatry/ai": "The state of AI in psychiatry: ambient note tools are real, decision support and chatbots are unproven, and no AI is cleared to diagnose.",
 }
 
 def esc(s):
